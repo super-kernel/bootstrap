@@ -1,0 +1,45 @@
+{
+    "name": "super-kernel/bootstrap",
+    "description": "The bootstrap component for super-kernel.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "super-kernel",
+        "bootstrap"
+    ],
+    "homepage": "https://github.com/super-kernel/bootstrap",
+    "support": {
+        "issues": "https://github.com/super-kernel/bootstrap/issues",
+        "source": "https://github.com/super-kernel/bootstrap"
+    },
+    "bin": [
+        "bin/super-kernel"
+    ],
+    "autoload": {
+        "psr-4": {
+            "SuperKernel\\Bootstrap\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "classmap-authoritative": true,
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "require": {
+        "php": "~8.4.0",
+        "super-kernel/annotator": "~1.0.0",
+        "super-kernel/class-loader": "~1.0.0",
+        "super-kernel/composer-resolver": "~1.0.0",
+        "super-kernel/context": "~1.0.0",
+        "super-kernel/di": "~1.0.0",
+        "super-kernel/path-resolver": "~1.0.0",
+        "super-kernel/reflector": "~1.0.0"
+    },
+    "require-dev": {
+        "super-kernel/event-dispatcher": "~1.0.0",
+        "super-kernel/framework": "~1.0.0"
+    }
+}
