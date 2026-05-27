@@ -1,0 +1,42 @@
+{
+    "name": "super-kernel/bootstrap",
+    "description": "Bootstrap metadata resolver for Super Kernel, providing project paths and Composer metadata before the Swoole runtime starts.",
+    "type": "library",
+    "keywords": [
+        "super-kernel",
+        "bootstrap",
+        "composer",
+        "project-root",
+        "vendor",
+        "phar",
+        "swoole"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "~8.4.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpunit/phpunit": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SuperKernel\\Bootstrap\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SuperKernel\\Bootstrap\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs": "php-cs-fixer fix --dry-run --diff",
+        "cs:fix": "php-cs-fixer fix",
+        "validate:composer": "composer validate --strict"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
